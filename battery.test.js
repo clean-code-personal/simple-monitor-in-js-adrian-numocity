@@ -6,7 +6,7 @@ describe('Battery Check', () => {
         expect(runBatteryCheck(25, 70, 0.7)).to.be.true;
     });
 
-    it('should return falsor high temperature', () => {
+    it('should return false for high temperature', () => {
         expect(runBatteryCheck(50, 70, 0.7)).to.be.false;
     });
 

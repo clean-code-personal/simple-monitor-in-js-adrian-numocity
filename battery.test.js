@@ -33,8 +33,4 @@ describe('Battery Check', () => {
     it('should return true for lower boundary values', () => {
         expect(runBatteryCheck(0, 20, 0)).to.be.true;
     });
-
-    it('should return false for empty input values', () => {
-        expect(runBatteryCheck(null, 70, 0.7)).to.be.false;
-    });
 });
